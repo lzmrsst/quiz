@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Interactivo: Discapacidad Intelectual y Físico-Motora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="start-screen" class="screen active">
+            <h1>Quiz de Formación Docente</h1>
+            <p>Comprensión de la Discapacidad Intelectual y Físico-Motora</p>
+            <button id="start-button">Comenzar</button>
+        </div>
+
+        <div id="quiz-screen" class="screen">
+            <div id="header">
+                <p id="question-counter"></p>
+            </div>
+            <div id="question-area">
+                <h2 id="question-text"></h2>
+                <img id="question-image" src="" alt="Imagen relacionada a la pregunta">
+            </div>
+            <div id="answers-area">
+                </div>
+        </div>
+
+        <div id="end-screen" class="screen">
+            <h2>¡Felicidades!</h2>
+            <p>Has completado el quiz de formación.</p>
+            <p>Este conocimiento es fundamental para crear entornos educativos inclusivos y efectivos.</p>
+            <button id="restart-button">Reiniciar Quiz</button>
+        </div>
+
+        <div id="feedback-modal" class="modal">
+            <div class="modal-content">
+                <h3>Evaluación Formativa</h3>
+                <p id="feedback-text"></p>
+                <button id="retry-button">Volver a Intentar</button>
+            </div>
+        </div>
+    </div>
+    <div class="background-animation"></div>
+    <script src="script.js"></script>
+</body>
+</html>
